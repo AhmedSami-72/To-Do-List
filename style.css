@@ -124,8 +124,9 @@ button:hover {
     background-color: #90E0EF;
     box-shadow: 0 0 15px rgba(2, 0, 36, 0.808);
     color: #0c98e4b6;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10px;
+    height: fit-content;
     flex-wrap: nowrap;
     padding: 15px;
     margin-bottom: 10px;
@@ -366,10 +367,10 @@ input {
     margin-top: 50px;
     height: 50vh;
     margin-bottom: 50px;
-    font-size: 1em;
+    font-size: 13px;
     font-weight: bold;
     overflow: hidden;
-    width: fit-content;
+    width:fit-content;
     color: #0c98e4b6;
 }
 
