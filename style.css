@@ -1,0 +1,405 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1.5px !important;
+}
+
+body {
+    /* background-color: rgb(19, 38, 74); */
+    background-color: #90E0EF;
+}
+
+
+.style-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 40px;
+}
+
+/* clock */
+#clock {
+    font-size: 25px;
+    font-weight: 900;
+    color: #0c98e4b6;
+}
+
+/*// clock //*/
+
+
+section {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+
+
+#mainContainer {
+    width: 700px;
+    margin: 0px auto;
+    height: 70vh;
+    border-radius: 10px;
+    padding: 12px;
+
+}
+
+
+#mainContainer h1 {
+    color: #0c98e4b6;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 3px;
+
+}
+
+.first {
+    text-align: center;
+}
+
+#inputContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    /* background-color: rgb(36,47,72); */
+    margin: 30px 0;
+    box-shadow: 0 0 15px rgba(2, 0, 36, 0.808);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#inputContainer input::placeholder{
+    color: #ffffff94;
+}
+
+#inputContainer input {
+    width: 100%;
+    flex-grow: 1;
+    display: inline-block;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    padding: 12px;
+    background-color: #90E0EF;
+    margin-right: 7px;
+    font-size: 17px;
+}
+
+#inputContainer input {
+    color: white;
+    font-weight: 400;
+}
+
+/* input:hover#input  {
+    background-color: #f9f9f9;
+    height: 60px;
+    border-radius: 8px;
+} */
+
+button {
+    padding: 15px 20px;
+    border: none;
+    background-color: #0076b6c5;
+    color: #CAF0F8;
+    font-weight: 800;
+    outline: none;
+    border-radius: 2px 5px 5px 2px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #2f5eaa;
+    color: white;
+}
+
+#taskContainer #myTask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border: none;
+    background-color: #90E0EF;
+    box-shadow: 0 0 15px rgba(2, 0, 36, 0.808);
+    color: #0c98e4b6;
+    font-size: 20px;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box !important;
+
+}
+
+
+#taskContainer #myTask p {
+    color: rgb(255, 255, 255);
+}
+
+#myTask .left {
+    width: 90%;
+
+}
+
+div.right {
+    flex-wrap: nowrap;
+}
+
+#myTask i {
+    display: inline-block;
+    margin-left: 7px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#myTask i:first-child {
+    color: #006D77;
+    font-size: 24px;
+
+}
+
+#myTask .fa-trash-can {
+    color: #03045E;
+}
+
+.doneTask {
+    text-decoration: line-through;
+    color: #028a7f !important;
+}
+
+
+h4{
+color: #0c98e4b6;
+font-size: large;
+font-weight: 800;
+text-align: end;
+}
+
+
+
+
+
+
+/* dark mode */
+/*
+    -- General Styles --
+*/
+
+body {
+
+    transition: .2s;
+}
+
+.toggle {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #0076b671 !important;
+    transition: .2s;
+}
+
+
+.toggle i {
+    width: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.toggle .ball {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin: 7.5px;
+    border-radius: 50%;
+    transition: .3s ease-out;
+}
+
+input {
+    display: none;
+}
+
+/*
+    -- Light Mode --
+*/
+
+.light {
+    background: #fafafa;
+}
+
+.light .toggle {
+    background: linear-gradient(145deg, #e1e1e1, #fff);
+    box-shadow: 3px 3px 4px #e6e6e6,
+        -3px -3px 4px #ffffff;
+}
+
+.light .toggle .bxs-sun {
+    color: #fafafa;
+}
+
+.light .toggle .bx-moon {
+    color: #151d2a;
+}
+
+.light .toggle .ball {
+    background: #151d2a;
+}
+
+/*// -- Light Mode -- //*/
+
+
+
+
+/*
+    -- Dark Mode --
+*/
+
+.dark {
+    background: rgb(19, 38, 74);
+}
+
+.dark .toggle {
+    background: #151d2a;
+    box-shadow: 3px 3px 3px #0e131b,
+        -3px -3px 3px #1c2739;
+}
+
+.dark_mode {
+    background-color: rgb(19, 38, 74) !important;
+}
+
+
+.dark .toggle .bx-sun {
+    color: #fafafa;
+}
+
+.dark .toggle .bxs-moon {
+    color: #151d2a;
+}
+
+.dark .toggle .ball {
+    background: #fafafa;
+    transform: translateX(60px);
+}
+
+/*// dark mode //*/
+
+
+/* media */
+@media screen and (max-width:480px) {
+    .style-nav {
+        flex-wrap: wrap;
+        margin: 10px 20px;
+
+    }
+
+    #clock {
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    #mainContainer h1 {
+        font-size: 18PX;
+        font-weight: 800;
+    }
+
+    #inputContainer input::placeholder {
+        font-size: 12px;
+    }
+
+}
+
+/* @media (max-width:900px) {
+    section #inputContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }  */
+
+
+
+
+
+
+
+/* animated */
+
+/* #animated-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3em;
+        font-weight: bold;
+      /* } */
+
+
+/* 
+     #animated-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3em;
+        font-weight: bold;
+      } */
+
+
+
+
+
+
+#animated-text {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin-top: 50px;
+    height: 50vh;
+    margin-bottom: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    overflow: hidden;
+    width: fit-content;
+    color: #0c98e4b6;
+}
+
+#animated-text .typing {
+    display: inline-block;
+    animation: typing 3s steps(30), blink 0.5s step-end 3;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #0c98e4b6;
+    margin-right: 10px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #0c98e4b6;
+    }
+}
