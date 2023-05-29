@@ -2,7 +2,7 @@
 
 ---
 demo:
-https://amazing-nougat-e6a196.netlify.app
+https://to-do-list-ahmedsami.vercel.app/
 ---
 javascript bootstrap html5 css3 tailwind
  ---
