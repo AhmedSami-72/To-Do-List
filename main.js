@@ -39,9 +39,9 @@ function myToDoProject() {
 
   //deleting all the tasks while we click on the clear button.
   clearButton.addEventListener("click", function () {
-    let tasks = document.querySelectorAll("#myTask"); // العثور على جميع العناصر التي تحتوي على المهام
+    let tasks = document.querySelectorAll("#myTask"); 
     tasks.forEach(function (task) {
-      task.remove(); // حذف العنصر الفردي الذي يحتوي على المهمة
+      task.remove();
     });
     saveMyInfo();
   });
@@ -87,14 +87,12 @@ function digitalClock() {
   let seconds = date.getSeconds();
   let ampm = hours >= 12 ? "PM" : "AM";
 
-  // تحويل الساعة والدقائق والثواني إلى صيغة رقمية (2 أرقام)
   hours = hours % 12;
   hours = hours ? hours : 12;
   hours = hours < 10 ? "0" + hours : hours;
   minutes = minutes < 10 ? "0" + minutes : minutes;
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
-  // عرض الوقت بتنسيق ساعة رقمية
   const time = `${hours}:${minutes}:${seconds} ${ampm}`;
   document.getElementById("clock").innerHTML = time;
 }
